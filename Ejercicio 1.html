@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <style>
+        #uno{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        #text{
+            font-size: 16pt;
+            overflow: hidden;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <div id="uno">
+        <p id="text">Este es el contenido del div1</p>
+
+    </div>
+    <div>
+        <input type="button" value="Cambiar texto" onclick="texto()"><br>
+        <input type="button" value="Cambiar color de fondo" onclick="color()"><br>
+        <input type="button" value="Cambiar tipo y color de letra" onclick="tipo()">
+
+    </div>
+    
+    <script>
+        function color(){
+            let x=prompt("Indica el nuevo color en ingles")
+            document.getElementById("uno").style.background=x
+            /*let div=document.getElementById("uno");
+            div.style.backgroundColor=x*/
+
+        }
+        function texto(){
+            let x=prompt("Ingresa el nuevo texto")
+            document.getElementById("text").innerHTML=x
+        }
+        function tipo(){
+        x=prompt("Ingresa el color de la letra")
+        document.getElementById("text").style.color=x
+        x=prompt("Ingresa el color de la letra")
+        document.getElementById("text").style.fontFamily=x
+            
+        }
+    </script>
+</body>
+
+</html>
+ 
